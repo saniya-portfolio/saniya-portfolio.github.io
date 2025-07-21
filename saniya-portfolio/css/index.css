@@ -1,0 +1,148 @@
+.timeline {
+      margin-top: 2rem;
+      border-left: 3px solid #343a40;
+      padding-left: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 3px;
+      background: #343a40;
+      animation: drawLine 2s ease forwards;
+    }
+
+    @keyframes drawLine {
+      from { height: 0; }
+      to { height: 100%; }
+    }
+
+    .timeline-item {
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -1.25rem;
+      top: 0.45rem;
+      width: 12px;
+      height: 12px;
+      background-color: #343a40;
+      border-radius: 50%;
+    }
+
+    .timeline-year {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 0.1rem;
+      color: #212529;
+    }
+
+    .timeline-content {
+      color: #495057;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .timeline-content-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      padding-left: 0.25rem;
+      transition: background-color 0.3s;
+    }
+
+    .timeline-content-header:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: 4px;
+    }
+
+    .timeline-content img {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+
+    .dropdown-arrow {
+      font-size: 1rem;
+      color: #495057;
+    }
+
+    .timeline-description {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      padding-left: 1.75rem;
+      display: none;
+    }
+
+    .timeline-description.open {
+      display: block;
+    }
+
+    .expertise-card {
+      text-decoration: none;
+      color: inherit;
+      background-color: #f1f3f5;
+      padding: 2rem;
+      border-radius: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .expertise-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .timeline-instruction {
+      text-align: center;
+      font-size: 0.95rem;
+      color: #6c757d;
+      margin: 0.5rem auto 1.5rem auto;
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      .intro-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .timeline {
+        padding-left: 1rem;
+      }
+
+      .timeline-item::before {
+        left: -1rem;
+      }
+
+      .timeline-content-header {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .timeline-content img {
+        width: 20px;
+        height: 20px;
+      }
+
+      .expertise-grid.static {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .expertise-card {
+        width: 90%;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+    }
