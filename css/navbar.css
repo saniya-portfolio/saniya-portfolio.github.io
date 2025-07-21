@@ -1,0 +1,40 @@
+/* CSS for the navigation bar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #ffffff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-img.small {
+  height: 25px;
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #212529;
+  font-weight: 500;
+}
+
+.nav-links .linkedin-button.nav-btn {
+  background-color: #0077b5;
+  color: #fff;
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.nav-links .linkedin-button.nav-btn:hover {
+  background-color: #005983;
+}

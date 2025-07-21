@@ -1,0 +1,672 @@
+/* ========================
+   Global & Navbar Styling
+======================== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #212529;
+  background-color: #F8F9FA;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+a img {
+  text-decoration: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ========================
+   Intro Section
+======================== */
+.section {
+  padding: 4rem 2rem;
+}
+
+.intro-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.intro-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 1100px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.intro-text {
+  flex: 1 1 40%;
+  align-self: flex-start;
+}
+
+.intro-text.left-align {
+  text-align: left;
+}
+
+.name-highlight {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #343A40;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #495057;
+  font-weight: 500;
+}
+
+.intro-photo {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.profile-pic.large {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #343A40;
+  margin-bottom: 1rem;
+}
+
+.intro-photo h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem;
+  color: #212529;
+}
+
+.intro-photo p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #212529;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #0077b5;
+  color: #fff;
+  padding: 0.5rem 1.25rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #005983;
+}
+
+/* ========================
+   Expertise Section
+======================== */
+.expertise h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #343A40;
+  text-align: center;
+}
+
+.expertise-grid.static {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.expertise-card {
+  background-color: #E9ECEF;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  width: 260px;
+  box-shadow: 0 4px 8px rgba(33, 37, 41, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.expertise-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(33, 37, 41, 0.12);
+}
+
+.expertise-card h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #212529;
+}
+
+.expertise-card p {
+  font-size: 0.95rem;
+  color: #495057;
+  line-height: 1.5;
+}
+
+/* ========================
+   Projects + Filters
+======================== */
+.filter-buttons {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem auto; /* center with margin */
+  text-align: center;
+}
+
+.filter-btn {
+  background-color: #DEE2E6;
+  border: none;
+  padding: 0.8rem 1.6rem;     /* increased padding for larger buttons */
+  border-radius: 6px;
+  font-weight: 700;           /* made bolder */
+  font-size: 1.1rem;          /* made text larger */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #ADB5BD;
+  color: white;
+  transform: scale(1.05);    /* optional: slight zoom on hover */
+}
+
+.project-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.project-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #343A40;
+}
+
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-images img {
+  max-width: 100%;
+  width: 48%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.project-box p,
+.project-box ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #212529;
+}
+
+.project-box ul {
+  padding-left: 1.25rem;
+}
+
+.project-box ul li {
+  margin-bottom: 0.5rem;
+}
+
+.project-tags {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.project-tags span {
+  background-color: #CED4DA;
+  color: #212529;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* ========================
+   Project-Specific Image Layouts
+======================== */
+
+.project-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  max-width: 1150px; /* slightly wider than index */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.project-box h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #343A40;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.project-images img {
+  border-radius: 0;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.project-images img:hover {
+  transform: scale(1.02);
+}
+
+.project-oldtech img {
+  width: 48%;
+  max-height: 200px;
+}
+
+.project-compututor img {
+  width: 30%;
+  max-height: 700px;
+}
+
+.project-separation img {
+  width: 60%;
+  max-height: 320px;
+  display: block;
+  margin: 0 auto;
+}
+
+.project-citrus img {
+  width: 48%;
+  max-height: 320px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-oldtech img,
+  .project-compututor img,
+  .project-citrus img {
+    width: 100%;
+    max-height: none;
+  }
+
+  .project-separation img {
+    width: 90%;
+  }
+}
+.website-img {
+  width: 32%;
+  max-height: 240px;
+  object-fit: cover;
+}
+.project-mentalhealth img {
+  width: 35%;
+  max-height: 650px;
+}
+.project-npv img {
+  width:150%;
+  max-height: 650px;
+  object-fit: contain;
+}
+.project-separation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-separation img {
+  width: 50%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 0rem;
+  margin: 0 auto 1rem auto;
+  display: block;
+}
+
+.project-techcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.project-techcon img {
+  max-width: 100%;
+  width: auto;
+  max-height: 320px;
+  object-fit: contain;
+  border-radius: 0rem;
+  transition: transform 0.3s ease;
+}
+
+.project-techcon img:hover {
+  transform: scale(1.02);
+}
+.project-mentalhealth {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.project-mentalhealth img {
+  width: 35%;
+  max-height: 650px;
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
+
+.project-mentalhealth img:hover {
+  transform: scale(1.02);
+}
+.project-compututor {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.project-compututor img {
+  width: 30%;
+  max-height: 700px;
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
+
+.project-compututor img:hover {
+  transform: scale(1.02);
+}
+.project-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.project-images.center-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.center-compututor {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.center-compututor img {
+  width: 30%;
+  max-height: 700px;
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
+
+.center-compututor img:hover {
+  transform: scale(1.02);
+}
+h2 {
+  text-align: center;
+  .project-resultsday-split {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .project-resultsday-final {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .project-resultsday-final .left-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+  }
+  
+  .project-resultsday-final .right-wrapper img {
+    max-width: 320px;
+    height: auto;
+  }
+  
+  .project-resultsday-final img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-resultsday-final img:hover {
+    transform: scale(1.02);
+  }
+  
+  @media (max-width: 768px) {
+    .project-resultsday-final {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-resultsday-final .left-wrapper,
+    .project-resultsday-final .right-wrapper img {
+      max-width: 90%;
+    }
+  }
+}  
+.project-resultsday-stacked {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-resultsday-stacked img {
+  width: 100%;
+  max-width: 550px;   /* Adjust this to make it smaller or larger */
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
+
+.project-resultsday-stacked img:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .project-resultsday-stacked img {
+    max-width: 100%;
+  }
+}
+.project-acrylicinfographic {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.project-acrylicinfographic img {
+  width: 48%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
+
+.project-acrylicinfographic img:hover {
+  transform: scale(1.02);
+}
+.project-acrylicinfographic {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: nowrap; /* prevent stacking and whitespace */
+  margin-bottom: 1rem;
+}
+.project-acrylicinfographic {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem; /* Tighten the space between them */
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.project-acrylicinfographic img {
+  width: 49%; /* Slightly wider to fill space without wrapping */
+  max-height: 600px;
+  object-fit: contain;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
+.filter-heading {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #343A40;
+}
+/* White box around filter heading + buttons */
+.filter-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  max-width: 1150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.filter-heading {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #343A40;
+  margin-bottom: 1.5rem;
+}
+.project-acrylicinfographic-layout {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.acrylic-column {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.acrylic-column img {
+  max-width: 100%;
+  max-height: 450px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.acrylic-column img:hover {
+  transform: scale(1.02);
+}
+
+.centered-row {
+  flex-basis: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: 1rem;
+}
+.centered-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.centered-image img {
+  max-width: 65%;
+  height: auto;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect like your other project images */
+.centered-image img:hover {
+  transform: scale(1.02);
+}
+.project-linkedinbanners {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.project-linkedinbanners img {
+  width: 100%;
+  max-width: 700px;
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
+
+.project-linkedinbanners img:hover {
+  transform: scale(1.02);
+}
+.filter-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #343A40;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
